@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '~> 2.7.0'
 
 gem 'benchmark-memory', require: false
 gem 'rubyXL', require: false
