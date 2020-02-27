@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    benchmark-ips (2.7.2)
     benchmark-memory (0.1.2)
       memory_profiler (~> 0.9)
     creek (2.5.0)
@@ -21,7 +22,7 @@ GEM
     simple_xlsx_reader (1.0.4)
       nokogiri
       rubyzip
-    xsv (0.3.1)
+    xsv (0.3.2)
       ox (~> 2.13)
       rubyzip (~> 2.2)
 
@@ -29,15 +30,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark-ips
   benchmark-memory
   creek
   roo
   rubyXL
   simple_xlsx_reader
   xsv
-
-RUBY VERSION
-   ruby 2.7.0p0
 
 BUNDLED WITH
    2.1.4

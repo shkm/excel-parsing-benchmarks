@@ -1,6 +1,7 @@
-require 'benchmark'
+require 'benchmark/ips'
 require 'benchmark/memory'
 SHEET_PATH = "sheet.xlsx"
+BENCHMARK_TIME = 3600.freeze # 1 hour each
 
 rubyxl = lambda do
   require 'rubyXL'
@@ -48,7 +49,10 @@ BENCHMARKS = {
 def time(name, &proc)
   puts "# #{name}: Speed"
   puts
-  Benchmark.bmbm { |benchmark| benchmark.report(name, &proc) }
+  Benchmark.ips do |benchmark|
+    benchmark.time = BENCHMARK_TIME
+    benchmark.report(name, &proc)
+  end
   puts
 end
 
@@ -58,6 +62,13 @@ def memory(name, &proc)
   Benchmark.memory { |benchmark| benchmark.report(name, &proc) }
   puts
 end
+
+# def memory(name, &proc)
+#   puts "# #{name}: Memory"
+#   puts
+#   MemoryProfiler.report(&proc).pretty_print(scale_bytes: true)
+#   puts
+# end
 
 def main
   case ARGV[0]
