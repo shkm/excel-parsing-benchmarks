@@ -20,7 +20,7 @@ Versions:
 - simple_xslx_reader 1.0.4
 - creek 2.5.0
 - roo 2.8.3
-- xsv 0.3.2
+- xsv 0.3.7
 
 ```
 # rubyxl: Speed
@@ -28,7 +28,7 @@ Versions:
 Warming up --------------------------------------
               rubyxl     1.000  i/100ms
 Calculating -------------------------------------
-              rubyxl      0.129  (¬± 0.0%) i/s -    463.000  in 3600.125333s
+              rubyxl      0.120  (± 0.0%) i/s -      8.000  in  66.946044s
 
 # rubyxl: Memory
 
@@ -42,7 +42,7 @@ Calculating -------------------------------------
 Warming up --------------------------------------
   simple_xlsx_reader     1.000  i/100ms
 Calculating -------------------------------------
-  simple_xlsx_reader      0.282  (¬± 0.0%) i/s -      1.015k in 3601.285927s
+  simple_xlsx_reader      0.257  (± 0.0%) i/s -     16.000  in  62.632245s
 
 # simple_xlsx_reader: Memory
 
@@ -56,13 +56,13 @@ Calculating -------------------------------------
 Warming up --------------------------------------
                creek     1.000  i/100ms
 Calculating -------------------------------------
-               creek      0.422  (¬± 0.0%) i/s -      1.518k in 3600.686387s
+               creek      0.366  (± 0.0%) i/s -     22.000  in  60.210546s
 
 # creek: Memory
 
 Calculating -------------------------------------
-               creek   911.538M memsize (   808.277k retained)
-                        13.180M objects (     6.100k retained)
+               creek   911.538M memsize (   808.237k retained)
+                        13.180M objects (     6.099k retained)
                         50.000  strings (    50.000  retained)
 
 # roo: Speed
@@ -70,7 +70,7 @@ Calculating -------------------------------------
 Warming up --------------------------------------
                  roo     1.000  i/100ms
 Calculating -------------------------------------
-                 roo      0.301  (¬± 0.0%) i/s -      1.084k in 3602.528968s
+                 roo      0.285  (± 0.0%) i/s -     18.000  in  63.319667s
 
 # roo: Memory
 
@@ -84,12 +84,12 @@ Calculating -------------------------------------
 Warming up --------------------------------------
                  xsv     1.000  i/100ms
 Calculating -------------------------------------
-                 xsv      1.531  (¬± 0.0%) i/s -      5.510k in 3600.482783s
+                 xsv      1.447  (± 0.0%) i/s -     87.000  in  60.262783s
 
 # xsv: Memory
 
 Calculating -------------------------------------
-                 xsv   347.250M memsize (   362.540k retained)
-                         1.506M objects (     3.166k retained)
+                 xsv    80.865M memsize (   361.884k retained)
+                       858.294k objects (     3.163k retained)
                         50.000  strings (    50.000  retained)
 ```

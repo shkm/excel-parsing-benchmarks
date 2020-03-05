@@ -22,7 +22,7 @@ GEM
     simple_xlsx_reader (1.0.4)
       nokogiri
       rubyzip
-    xsv (0.3.2)
+    xsv (0.3.7)
       ox (~> 2.13)
       rubyzip (~> 2.2)
 

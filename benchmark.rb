@@ -1,7 +1,7 @@
 require 'benchmark/ips'
 require 'benchmark/memory'
 SHEET_PATH = "sheet.xlsx"
-BENCHMARK_TIME = 3600.freeze # 1 hour each
+BENCHMARK_TIME = 60.freeze # 1 minute
 
 rubyxl = lambda do
   require 'rubyXL'
